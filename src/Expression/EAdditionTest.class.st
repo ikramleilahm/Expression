@@ -8,10 +8,22 @@ Class {
 EAdditionTest >> testEvaluate [
 
 	| ep1 ep2 |
-	ep1 := EConstant new value: 5.
-	ep2 := EConstant new value: 3.
+	ep1 := EConstant constant5 .
+	ep2 := EConstant constant3 .
 
-	self assert: (EAddition new right: ep1; left: ep2) evaluate equals: 8
+	self
+		assert: (EAddition new
+				 right: ep1;
+				 left: ep2) evaluate
+		equals: 8
+]
+
+{ #category : #tests }
+EAdditionTest >> testEvaluateWithClassCreationMessage [
+| ep1 ep2 |
+ep1 := EConstant value: 5.
+ep2 := EConstant value: 3.
+self assert: (EAddition left: ep1 right: ep2) evaluate equals: 8
 ]
 
 { #category : #tests }

@@ -8,6 +8,12 @@ Class {
 	#category : #Expression
 }
 
+{ #category : #'instance creation' }
+EAddition class >> left: anInteger right: anInteger2 [
+^ self new left: anInteger ; right: anInteger2
+
+]
+
 { #category : #'public access' }
 EAddition >> evaluate [
 " evaluate the two expressions and return their sum!"

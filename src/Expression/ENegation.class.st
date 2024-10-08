@@ -7,6 +7,11 @@ Class {
 	#category : #Expression
 }
 
+{ #category : #'instance creation' }
+ENegation class >> expression: anExpression [
+^ self new expression: anExpression 
+]
+
 { #category : #'public access' }
 ENegation >> evaluate [
 	^ (expression evaluate) negated.
