@@ -27,6 +27,17 @@ EAddition >> left: anExpression [
 	left := anExpression
 ]
 
+{ #category : #printing }
+EAddition >> printOn: aStream [
+	"Print the addition in the form ( left + right )"
+
+	aStream nextPutAll: '( '.
+	left printOn: aStream.
+	aStream nextPutAll: ' + '.
+	right printOn: aStream.
+	aStream nextPutAll: ' )'
+]
+
 { #category : #accessing }
 EAddition >> right: anExpression [
 

@@ -38,3 +38,10 @@ EAdditionTest >> testNegated [
 				 left: ep2) negated evaluate
 		equals: -8
 ]
+
+{ #category : #tests }
+EAdditionTest >> testPrinting [
+    self assert: (EAddition left: 5 right:3 ) printString equals: '( 5 + 3 )'.
+   
+
+]

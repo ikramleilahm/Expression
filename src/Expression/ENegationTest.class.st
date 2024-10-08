@@ -23,3 +23,11 @@ ENegationTest >> testNegationNegated [
 self assert: (EConstant new value: 6) negated negated evaluate
 equals: 6
 ]
+
+{ #category : #tests }
+ENegationTest >> testPrinting [
+
+	self
+		assert: (ENegation expression: EConstant constant5) printString
+		equals: '-5'.
+]
