@@ -13,3 +13,10 @@ ManifestExpression class >> ruleRefersToClassRuleV1FalsePositive [
 	<ignoreForCoverage>
 	^ #(#(#(#RGMethodDefinition #(#ENegation #negated #false)) #'2024-10-08T14:09:55.653+02:00') )
 ]
+
+{ #category : #'code-critics' }
+ManifestExpression class >> ruleSelfSentNotImplementedRuleV1FalsePositive [
+
+	<ignoreForCoverage>
+	^ #(#(#(#RGMethodDefinition #(#EBinaryExpression #printOn: #false)) #'2024-10-08T20:25:39.815+02:00') )
+]

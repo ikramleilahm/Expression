@@ -1,10 +1,6 @@
 Class {
 	#name : #EAddition,
-	#superclass : #EExpression,
-	#instVars : [
-		'right',
-		'left'
-	],
+	#superclass : #EBinaryExpression,
 	#category : #Expression
 }
 
@@ -25,6 +21,12 @@ EAddition >> evaluate [
 EAddition >> left: anExpression [
 
 	left := anExpression
+]
+
+{ #category : #'as yet unclassified' }
+EAddition >> operatorString [
+
+	^ ' + '
 ]
 
 { #category : #printing }

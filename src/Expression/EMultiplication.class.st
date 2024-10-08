@@ -1,10 +1,6 @@
 Class {
 	#name : #EMultiplication,
-	#superclass : #EExpression,
-	#instVars : [
-		'right',
-		'left'
-	],
+	#superclass : #EBinaryExpression,
 	#category : #Expression
 }
 
@@ -26,6 +22,12 @@ EMultiplication >> evaluate [
 EMultiplication >> left:  anExpression [
 
 	left  := anExpression
+]
+
+{ #category : #'as yet unclassified' }
+EMultiplication >> operatorString [
+
+	^ ' * '
 ]
 
 { #category : #accessing }
