@@ -1,6 +1,6 @@
 Class {
 	#name : #EConstant,
-	#superclass : #Object,
+	#superclass : #EExpression,
 	#instVars : [
 		'value'
 	],

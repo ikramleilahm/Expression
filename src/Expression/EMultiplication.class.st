@@ -1,6 +1,6 @@
 Class {
 	#name : #EMultiplication,
-	#superclass : #Object,
+	#superclass : #EExpression,
 	#instVars : [
 		'right',
 		'left'
